@@ -1,9 +1,13 @@
-export { default } from "../page"
-export { metadata } from "../page"
-
-// Ensure there is a default export
-const MarketingPage = () => {
-  return <div>{/* Marketing layout content here */}</div>
+export const metadata = {
+  title: "Marketing",
+  description: "Welcome to our marketing page",
 }
 
-export default MarketingPage
+export default function MarketingPage() {
+  return (
+    <div>
+      <h1>Marketing Page</h1>
+      <p>This is the marketing page content.</p>
+    </div>
+  )
+}
