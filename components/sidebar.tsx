@@ -28,6 +28,7 @@ import {
   Stamp,
   AppWindow,
   ArrowLeftRight,
+  Settings,
 } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
@@ -133,6 +134,7 @@ export function SidebarStatic() {
       <div className="space-y-6 p-4">
         {/* General category (was Core Tools) */}
         <Section
+          icon={Settings}
           title="General"
           links={coreLinks}
           isOpen={openSection === "General"}

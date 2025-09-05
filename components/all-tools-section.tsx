@@ -82,7 +82,7 @@ function ToolsGrid({ cat }: { cat: Category }) {
 export default function AllToolsSection() {
   const [tab, setTab] = useState<Category>("All")
   return (
-    <section className="container mx-auto px-4 py-12">
+    <section className="container mx-auto max-w-5xl px-4 py-12">
       <h2 className="text-balance text-2xl font-semibold">All tools</h2>
       <p className="mb-4 text-sm text-muted-foreground">Browse by category or see everything.</p>
       <Tabs value={tab} onValueChange={(v) => setTab(v as Category)}>

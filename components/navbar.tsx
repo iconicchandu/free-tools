@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
-import { Menu } from "lucide-react"
+import { Menu, Settings } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { searchTools } from "@/lib/tools-index"
@@ -81,9 +81,9 @@ export function Navbar({ onOpenSidebar }: NavbarProps) {
           )}
         </div>
 
-        <nav className="flex items-center gap-2">
-          <Link href="/tools" className="hidden text-sm text-foreground/80 hover:text-foreground md:inline">
-            Tools
+        <nav className="flex justify-center items-center bg-[#ccfbff] p-[5px] rounded-md">
+          <Link href="/tools" className="flex text-sm text-foreground/80 hover:text-foreground justify-center items-center">
+            <Settings className="w-4 h-4 mr-1"/>Tools
           </Link>
           {/* ModeToggle component removed */}
         </nav>
